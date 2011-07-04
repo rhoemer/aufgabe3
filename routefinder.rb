@@ -7,11 +7,11 @@ class RouteFinder
 	
 
 
-	def initialize(initRoute)
+	def initialize(xRoute)
 	    g = Graph.new("AB6,BC3,CE5,EC8,CE3,BE2,BD5,DE7") 	
 												
 		@array = []
-                @route = initRoute.split('-')							
+                @route = xRoute.split('-')							
 		@strecke = 0
 									
 															
