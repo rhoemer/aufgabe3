@@ -1,8 +1,12 @@
 require 'graph'
 
+
+
 class RouteFinder
-	attr_accessor :route, :strecke, :block, :success
+	attr_accessor :route, :block, :success, :strecke
 	
+
+
 	def initialize(initRoute)
 	    g = Graph.new("AB6,BC3,CE5,EC8,CE3,BE2,BD5,DE7") 	
 		@strecke = 0												
