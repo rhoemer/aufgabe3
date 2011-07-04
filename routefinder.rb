@@ -22,11 +22,11 @@ class RouteFinder
                         i = i + 1
 		end
 
-		i = 0	
 		
 
 
-                        while i < block.size									
+                i = 0	
+		while i < block.size									
 			j = 0
 			
 
@@ -48,7 +48,7 @@ class RouteFinder
 			
 	def to_s
 		if success 												
-		puts "Strecke Betrag:"									
+		puts "Die gesamte Strecke Betraegt:"									
 		@strecke
 		
                 elsif 
