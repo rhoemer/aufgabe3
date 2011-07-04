@@ -17,9 +17,9 @@ class RouteFinder
 															
 		i = 0
 		while i < route.size - 1							
-			@block.insert(i, @route[i] + @route[i+1])			
+			@block.insert(i, @route[i] + @route[i + 1])			
 			
-                        i +=1
+                        i = i + 1
 		end
 
 		i = 0	
@@ -39,10 +39,10 @@ class RouteFinder
 				else
 					@success = false							
 				end			
-				j +=1
+				j = j + 1
 			end
 			break if success == false							
-			i +=1	
+			i = i + 1	
 		end
 	end
 			
