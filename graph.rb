@@ -12,7 +12,7 @@ class Graph
 		
                 i = 0
 		while i < kanten.size
-			knoten[i] = knoten[i].delete "1234567890"				
+			knoten[i] = knoten[i].delete "0123456789"				
 		        i = i + 1
 		end	
 		
