@@ -4,10 +4,10 @@ class Graph
 
 
 
-	def initialize(initKanten)
+	def initialize(xKanten)
 	        
-                @knoten = initKanten.split(',')
-                @kanten = initKanten.split(',')								
+                @knoten = xKanten.split(',')
+                @kanten = xKanten.split(',')								
 	        
 		
                 i = 0
