@@ -59,8 +59,8 @@ class RouteFinder
 end
 
 
-n = RouteFinder.new("A-B-C")
+a = RouteFinder.new("A-B-C")
 
 
-puts n.to_s														
+puts a.to_s														
 
