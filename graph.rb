@@ -1,6 +1,9 @@
 class Graph
 	attr_accessor :stationen, :kanten
 	
+
+
+
 	def initialize(initKanten)
 	        @kanten = initKanten.split(',')								
 	        @stationen = initKanten.split(',')
@@ -19,6 +22,8 @@ class Graph
 			end	
 	end
 	
+
+
 	
 	def to_s
 		@kanten + @stationen
