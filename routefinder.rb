@@ -3,7 +3,7 @@ require 'Graph'
 
 
 class RouteFinder
-	attr_accessor :route, :trueler, :strecke, :block
+	attr_accessor :route, :trueler, :strecke, :array
 	
 
 
@@ -13,11 +13,11 @@ class RouteFinder
 		
                 @route = initRoute.split('-')							
 		
-                @block = []									
+                @array = []									
 															
 		i = 0
 		while i < route.size - 1							
-			@block.insert(i, @route[i] + @route[i + 1])			
+			@array.insert(i, @route[i] + @route[i + 1])			
 			
                         i = i + 1
 		end
@@ -26,12 +26,12 @@ class RouteFinder
 
 
                 i = 0	
-		while i < block.size									
+		while i < array.size									
 			j = 0
 			
 
                         while j < g.knoten.size
-				if @block[i] == g.knoten[j]				
+				if @array[i] == g.knoten[j]				
 					@strecke = @strecke + g.kanten[j].to_i		 
 					@trueler = true								
 				
