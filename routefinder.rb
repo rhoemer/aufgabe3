@@ -23,9 +23,14 @@ class RouteFinder
 		end
 
 		i = 0	
-		while i < block.size									
+		
+
+
+                        while i < block.size									
 			j = 0
-			while j < g.stationen.size
+			
+
+                        while j < g.stationen.size
 				if @block[i] == g.stationen[j]				
 					@strecke = @strecke + g.kanten[j].to_i		 
 					@success = true								
