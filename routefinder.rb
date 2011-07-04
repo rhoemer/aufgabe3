@@ -3,7 +3,7 @@ require 'Graph'
 
 
 class RouteFinder
-	attr_accessor :route, :success, :strecke, :block
+	attr_accessor :route, :trueler, :strecke, :block
 	
 
 
@@ -33,21 +33,21 @@ class RouteFinder
                         while j < g.knoten.size
 				if @block[i] == g.knoten[j]				
 					@strecke = @strecke + g.kanten[j].to_i		 
-					@success = true								
+					@trueler = true								
 				
-                                        break if success == true
+                                        break if trueler == true
 				else
-					@success = false							
+					@trueler = false							
 				end			
 				j = j + 1
 			end
-			break if success == false							
+			break if trueler == false							
 			i = i + 1	
 		end
 	end
 			
 	def to_s
-		if success 												
+		if trueler 												
 		puts "Die gesamte Strecke Betraegt:"									
 		@strecke
 		
