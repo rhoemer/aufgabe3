@@ -5,10 +5,12 @@ class Graph
 
 
 	def initialize(initKanten)
-	        @knoten = initKanten.split(',')
+	        
+                @knoten = initKanten.split(',')
                 @kanten = initKanten.split(',')								
 	        
-		i = 0
+		
+                i = 0
 			while i < kanten.size
 				knoten[i] = knoten[i].delete "1234567890"				
 		                i = i + 1
@@ -21,13 +23,9 @@ class Graph
 			        end	
 	end
 	
-
-
-	
-	def to_s
+                def to_s
 		@kanten + @knoten
 	end
-
 end
 
 
