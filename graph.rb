@@ -1,5 +1,5 @@
-class Graph
-	attr_accessor :kanten, :stationen
+class Strecke
+	attr_accessor :stationen, :kanten
 	
 	def initialize(initKanten)
 	
